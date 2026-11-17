@@ -20,3 +20,12 @@ If the filename isn't `alliso-sorted.txt`, rename it.
 If the filename isn't `prominence-p100.txt`, rename it.
 
 - Now you can run `Analysis.ipynb`.
+
+# How to execute the code 
+
+mkdir build
+cd build
+cmake ..
+cd ..
+cmake --build build
+./orometrie
