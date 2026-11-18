@@ -6,3 +6,4 @@ cmake ..
 cd ..
 cmake --build build
 ./orometrie
+
