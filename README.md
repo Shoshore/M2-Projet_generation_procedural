@@ -23,9 +23,9 @@ If the filename isn't `prominence-p100.txt`, rename it.
 
 # How to execute the code 
 
-mkdir build
-cd build
-cmake ..
-cd ..
-cmake --build build
+mkdir build \
+cd build \
+cmake .. \
+cd .. \
+cmake --build build \
 ./orometrie

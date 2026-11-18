@@ -38,6 +38,7 @@ int g_windowWidth = 1024;
 int g_windowHeight = 768;
 
 static Camera camera;
+const float camera_speed = 0.2;
 static bool mouseRotatePressed = false;
 static bool mouseMovePressed = false;
 static bool mouseZoomPressed = false;
@@ -117,13 +118,6 @@ void render() {
 
     camera.apply();
 
-    //   std::cout << "rendering " << mesh.V.size() << std::endl;
-    //   std::cout << "camera " << camera.x << " " << camera.y << " " <<
-    //   camera.z
-    //   << " " << camera.aspectRatio <<
-    //                " " << camera.nearPlane << " " << camera.farPlane <<
-    //                std::endl;
-
     glEnable(GL_DEPTH);
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_LIGHTING);
@@ -139,6 +133,18 @@ void keyCallback(GLFWwindow *window, int key, int scancode, int action,
         return;
 
     switch (key) {
+        case GLFW_KEY_W:
+            camera.move(0.0, 0.0, camera_speed);
+            break;
+        case GLFW_KEY_S:
+            camera.move(0.0, 0.0, -camera_speed);
+            break;
+        case GLFW_KEY_A:
+            camera.move(camera_speed, 0.0, 0.0);
+            break;
+        case GLFW_KEY_D:
+            camera.move(-camera_speed, 0.0, 0.0);
+            break;
 
     default:
         printUsage();
