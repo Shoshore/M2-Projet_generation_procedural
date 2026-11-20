@@ -1,4 +1,2 @@
-__pycache__/
-.venv/
-alliso-sorted.txt
-prominence-p100.txt
+.cache
+build/

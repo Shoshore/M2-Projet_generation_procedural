@@ -1,8 +1,7 @@
 #ifndef MESH_H
 #define MESH_H
 
-#include "OpenGL.h"
-
+#include <glad/glad.h>
 #include <glm/glm.hpp>
 #include <string>
 #include <vector>

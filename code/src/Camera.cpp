@@ -1,7 +1,7 @@
 
 
 
-#include "OpenGL.h"
+#include <glad/glad.h>
 
 #include "Camera.h"
 #include <iostream>

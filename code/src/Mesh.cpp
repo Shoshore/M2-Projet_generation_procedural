@@ -1,6 +1,5 @@
 #include "Mesh.h"
 #include <fstream>
-#include <iostream>
 
 void Mesh::loadOFF(const std::string &filename) {
     std::ifstream in(filename.c_str());

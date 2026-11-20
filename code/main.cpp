@@ -14,19 +14,16 @@
 // purpose.
 // -------------------------------------------
 
-#include "src/OpenGL.h"
+#include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
 #include <cstdio>
 #include <cstdlib>
-#include <fstream>
 #include <iostream>
 #include <string>
-#include <vector>
 
 #include "src/Camera.h"
 #include "src/Mesh.h"
-#include <algorithm>
 
 #include <glm/glm.hpp>
 

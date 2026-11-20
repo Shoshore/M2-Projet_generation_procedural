@@ -1,6 +1,6 @@
 # CMake entry point
 cmake_minimum_required (VERSION 3.0)
-project (orometrie)
+project (sparse)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
@@ -27,7 +27,7 @@ if(INCLUDE_DISTRIB)
     add_subdirectory(distrib)
 endif(INCLUDE_DISTRIB)
 # Main executable
-add_executable(orometrie
+add_executable(sparse
     main.cpp
 	src/Camera.h
 	src/Camera.cpp
@@ -38,26 +38,26 @@ add_executable(orometrie
 	src/Trackball.h
 	src/Transform.h
 )
-target_include_directories(orometrie PRIVATE
+target_include_directories(sparse PRIVATE
 	external/glfw-3.1.2/include
 	external/glm-0.9.7.1
 )
-target_link_libraries(orometrie PRIVATE
+target_link_libraries(sparse PRIVATE
 	glad
 	glfw
 	${OPENGL_gl_LIBRARY}
 	${GLFW_LIBRARIES}
 	${CMAKE_DL_LIBS}
 )
-target_compile_features(orometrie PRIVATE cxx_std_17)
+target_compile_features(sparse PRIVATE cxx_std_17)
 # Xcode and Visual working directories - set to project root
-set_target_properties(orometrie PROPERTIES XCODE_ATTRIBUTE_CONFIGURATION_BUILD_DIR "${CMAKE_CURRENT_SOURCE_DIR}/")
-create_target_launcher(orometrie WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/")
+set_target_properties(sparse PROPERTIES XCODE_ATTRIBUTE_CONFIGURATION_BUILD_DIR "${CMAKE_CURRENT_SOURCE_DIR}/")
+create_target_launcher(sparse WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/")
 SOURCE_GROUP(common REGULAR_EXPRESSION ".*/common/.*" )
 if (NOT ${CMAKE_GENERATOR} MATCHES "Xcode" )
 add_custom_command(
-TARGET orometrie POST_BUILD
-COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_CFG_INTDIR}/orometrie${CMAKE_EXECUTABLE_SUFFIX}" "${CMAKE_CURRENT_SOURCE_DIR}/"
+TARGET sparse POST_BUILD
+COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_CFG_INTDIR}/sparse${CMAKE_EXECUTABLE_SUFFIX}" "${CMAKE_CURRENT_SOURCE_DIR}/"
 )
 elseif (${CMAKE_GENERATOR} MATCHES "Xcode" )
 endif (NOT ${CMAKE_GENERATOR} MATCHES "Xcode" )

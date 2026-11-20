@@ -1,7 +1,7 @@
 #ifndef SCENE_H
 #define SCENE_H
 
-#include "OpenGL.h"
+#include <glad/glad.h>
 
 #include "Mesh.h"
 #include <string>

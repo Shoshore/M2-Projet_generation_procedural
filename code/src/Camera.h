@@ -9,12 +9,10 @@
 #ifndef CAMERA_H
 #define CAMERA_H
 
-#include "OpenGL.h"
 
 #include "Trackball.h"
 
 #include <glm/glm.hpp>
-#include <iostream>
 
 class Camera {
   public:

@@ -4,7 +4,7 @@
         {
             "label": "C++ build and run",
             "type": "shell",
-            "command": " cd code && rm -rf build && mkdir build && cd build && cmake .. && cd .. && cmake --build build && ./orometrie ",
+            "command": " cd code && rm -rf build && mkdir build && cd build && cmake .. && cd .. && cmake --build build && ./sparse ",
             "group": "build",
             "problemMatcher": [
                 "$gcc"
