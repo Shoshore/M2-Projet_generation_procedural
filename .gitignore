@@ -1,3 +1,6 @@
 .cache
 build/
 .clangd
+.vscode/*
+!.vscode/tasks.json
+sparse
