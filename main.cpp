@@ -295,7 +295,7 @@ int main(int argc, char **argv) {
     initOpenGL(); // OpenGL Context and shader pipeline
     init();
 
-    mesh.loadOFF(argc == 2 ? argv[1] : "models/arma.off");
+    mesh.loadOFF(argc == 2 ? argv[1] : "assets/models/arma.off");
 
     while (!glfwWindowShouldClose(g_window)) {
         // update(static_cast<float>(glfwGetTime()));
