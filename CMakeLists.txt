@@ -37,6 +37,12 @@ add_executable(sparse
 	src/Trackball.cpp
 	src/Trackball.h
 	src/Transform.h
+	src/Controls.h
+	src/Controls.cpp
+	src/Engine.cpp
+	src/Engine.h
+	src/Viewport.cpp
+	src/Viewport.h
 )
 target_include_directories(sparse PRIVATE
 	external/glfw-3.1.2/include

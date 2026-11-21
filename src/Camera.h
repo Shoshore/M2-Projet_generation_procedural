@@ -42,7 +42,7 @@ class Camera {
 
     template <typename float_t>
     void getPos(float_t &X, float_t &Y, float_t &Z) {
-        GLfloat m[4][4];
+        float m[4][4];
         build_rotmatrix(m, curquat);
         float _x = -x;
         float _y = -y;
