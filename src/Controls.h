@@ -29,7 +29,7 @@ class Controls {
 
         Viewport &m_viewport;
         Camera m_camera;
-        const float m_speed = 0.1f;
+        const float m_speed = 0.05f;
         const float m_zoomSpeed = 1.0f;
 
         bool m_rotate = false, m_move = false, m_pressed = false;

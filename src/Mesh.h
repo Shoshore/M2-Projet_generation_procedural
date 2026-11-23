@@ -2,17 +2,16 @@
 #define MESH_H
 
 #include <glad/glad.h>
-#include <glm/glm.hpp>
 #include <string>
 #include <vector>
-
+#include <Eigen>
 // -------------------------------------------
 // Basic Mesh class
 // -------------------------------------------
 
 struct MeshVertex {
     inline MeshVertex() {}
-    inline MeshVertex(const glm::vec3 &_p, const glm::vec3 &_n)
+    inline MeshVertex(const Eigen::Vector3f &_p, const Eigen::Vector3f &_n)
         : p(_p), pInit(_p), n(_n) {}
     inline MeshVertex(const MeshVertex &v) : p(v.p), pInit(v.pInit), n(v.n) {}
     inline virtual ~MeshVertex() {}
@@ -26,9 +25,9 @@ struct MeshVertex {
     float operator[](unsigned int c) const { return p[c]; }
 
     // membres :
-    glm::vec3 p;     // une position
-    glm::vec3 pInit; // une position
-    glm::vec3 n;     // une normale
+    Eigen::Vector3f p;     // une position
+    Eigen::Vector3f pInit; // une position
+    Eigen::Vector3f n;     // une normale
 };
 
 struct MeshTriangle {

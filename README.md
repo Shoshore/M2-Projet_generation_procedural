@@ -15,3 +15,6 @@ cmake .. \
 cd .. \
 cmake --build build \
 ./sparce
+
+# OMP
+We based our OMP implementation on the following repository : `https://github.com/sai-bi/OrthogonalMatchingPursuit/tree/master/src`

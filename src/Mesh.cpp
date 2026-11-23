@@ -10,7 +10,7 @@ void Mesh::loadOFF(const std::string &filename) {
     V.resize(sizeV);
     T.resize(sizeT);
     for (unsigned int i = 0; i < sizeV; i++) {
-        in >> V[i].p.x >> V[i].p.y >> V[i].p.z;
+        in >> V[i].p.x() >> V[i].p.y() >> V[i].p.z();
         V[i].pInit = V[i].p;
     }
     int s;
@@ -26,26 +26,26 @@ void Mesh::loadOFF(const std::string &filename) {
 
 void Mesh::recomputeNormals() {
     for (unsigned int i = 0; i < V.size(); i++)
-        V[i].n = glm::vec3(0.0f, 0.0f, 0.0f);
+        V[i].n = Eigen::Vector3f(0.0f, 0.0f, 0.0f);
     for (unsigned int i = 0; i < T.size(); i++) {
-        glm::vec3 e01 = V[T[i].v[1]].p - V[T[i].v[0]].p;
-        glm::vec3 e02 = V[T[i].v[2]].p - V[T[i].v[0]].p;
-        glm::vec3 n = glm::normalize(glm::cross(e01, e02));
+        Eigen::Vector3f e01 = V[T[i].v[1]].p - V[T[i].v[0]].p;
+        Eigen::Vector3f e02 = V[T[i].v[2]].p - V[T[i].v[0]].p;
+        Eigen::Vector3f n = e01.cross(e02).normalized();
         for (unsigned int j = 0; j < 3; j++)
             V[T[i].v[j]].n += n;
     }
     for (unsigned int i = 0; i < V.size(); i++)
-        V[i].n = glm::normalize(V[i].n);
+        V[i].n.normalize();
 }
 
 void Mesh::centerAndScaleToUnit() {
-    glm::vec3 c(0.0f, 0.0f, 0.0f);
+    Eigen::Vector3f c(0.0f, 0.0f, 0.0f);
     for (unsigned int i = 0; i < V.size(); i++)
         c += V[i].p;
     c /= V.size();
-    float maxD = (V[0].p - c).length();
+    float maxD = (V[0].p - c).norm();
     for (unsigned int i = 0; i < V.size(); i++) {
-        float m = (V[i].p - c).length();
+        float m = (V[i].p - c).norm();
         if (m > maxD)
             maxD = m;
     }

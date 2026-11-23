@@ -12,8 +12,7 @@
 
 #include "Trackball.h"
 
-#include <glm/glm.hpp>
-
+#include <Eigen>
 class Camera {
   public:
     Camera();
@@ -51,7 +50,7 @@ class Camera {
         Y = m[1][0] * _x + m[1][1] * _y + m[1][2] * _z;
         Z = m[2][0] * _x + m[2][1] * _y + m[2][2] * _z;
     }
-    inline void getPos(glm::vec3 &p) { getPos(p[0], p[1], p[2]); }
+    inline void getPos(Eigen::Vector3f &p) { getPos(p[0], p[1], p[2]); }
 
   public:
     float fovAngle;

@@ -4,4 +4,3 @@ endif()
 
 add_subdirectory(glad)
 add_subdirectory(glfw-3.1.2)
-

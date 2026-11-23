@@ -43,10 +43,16 @@ add_executable(sparse
 	src/Engine.h
 	src/Viewport.cpp
 	src/Viewport.h
+	src/OMP.h
+	src/OMP.cpp
 )
 target_include_directories(sparse PRIVATE
 	external/glfw-3.1.2/include
-	external/glm-0.9.7.1
+	# external/glm-0.9.7.1
+)
+target_include_directories(sparse SYSTEM PRIVATE
+    external/eigen3
+	external/eigen3/Eigen
 )
 target_link_libraries(sparse PRIVATE
 	glad
