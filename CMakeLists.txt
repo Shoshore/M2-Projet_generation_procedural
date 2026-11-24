@@ -29,6 +29,7 @@ endif(INCLUDE_DISTRIB)
 # Main executable
 add_executable(sparse
     main.cpp
+
 	src/Camera.h
 	src/Camera.cpp
 	src/Mesh.h
@@ -45,8 +46,11 @@ add_executable(sparse
 	src/Viewport.h
 	src/OMP.h
 	src/OMP.cpp
+
+	lib/stb_image.h
 )
 target_include_directories(sparse PRIVATE
+	${CMAKE_SOURCE_DIR}
 	external/glfw-3.1.2/include
 	# external/glm-0.9.7.1
 )
