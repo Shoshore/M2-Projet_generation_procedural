@@ -62,6 +62,7 @@ class Mesh {
     std::vector<MeshTriangle> T;
 
     void loadOFF(const std::string &filename);
+    void loadHeightMap(const std::string &filename);
     void recomputeNormals();
     void centerAndScaleToUnit();
     void scaleUnit();

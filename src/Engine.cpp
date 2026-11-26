@@ -1,8 +1,6 @@
 #include "Engine.h"
 
-Engine::Engine() {
-    initGL();
-}
+Engine::Engine() { initGL(); }
 
 void Engine::run() {
     while (!m_viewport.shouldClose()) {
@@ -12,7 +10,6 @@ void Engine::run() {
         m_viewport.swapBuffers();
     }
 }
-
 
 void Engine::initGL() {
     initLight();
@@ -24,7 +21,6 @@ void Engine::initGL() {
     glEnable(GL_COLOR_MATERIAL);
     glClearColor(0.9f, 0.9f, 0.9f, 1.0f);
 }
-
 
 void Engine::initLight() {
     GLfloat light_position1[4] = {22.0f, 16.0f, 50.0f, 0.0f};
@@ -41,9 +37,9 @@ void Engine::initLight() {
     glEnable(GL_LIGHTING);
 }
 
-void Engine::loadMesh(const char *path) {
-    m_mesh.loadOFF(path);
-}
+void Engine::loadMesh(const char *path) { m_mesh.loadOFF(path); }
+
+void Engine::loadHeightMap(const char *path) { m_mesh.loadHeightMap(path); }
 
 void Engine::render() {
     glViewport(0, 0, m_viewport.width(), m_viewport.height());

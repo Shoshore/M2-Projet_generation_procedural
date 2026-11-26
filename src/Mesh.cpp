@@ -1,5 +1,11 @@
 #include "Mesh.h"
+
+#define STB_IMAGE_IMPLEMENTATION
+#include <lib/stb_image.h>
+
 #include <fstream>
+#include <memory>
+#include <stdexcept>
 
 void Mesh::loadOFF(const std::string &filename) {
     std::ifstream in(filename.c_str());
@@ -21,6 +27,46 @@ void Mesh::loadOFF(const std::string &filename) {
     }
     in.close();
     centerAndScaleToUnit();
+    recomputeNormals();
+}
+
+void Mesh::loadHeightMap(const std::string &filename) {
+    int width = 0;
+    int height = 0;
+    int nChannels = 0;
+    std::unique_ptr<unsigned char, decltype(&stbi_image_free)> data(
+        stbi_load(filename.c_str(), &width, &height, &nChannels, 0),
+        stbi_image_free);
+
+    V.clear();
+    T.clear();
+    V.reserve(static_cast<std::size_t>(width) * height);
+    T.reserve(static_cast<std::size_t>(width - 1) * (height - 1) * 2);
+
+    float yScale = 16.0f / 256.0f;
+    float yShift = 4.0f;
+    for (int i = 0; i < height; ++i) {
+        for (int j = 0; j < width; ++j) {
+            const unsigned char y = data.get()[(j + width * i) * nChannels];
+
+            const Eigen::Vector3f position(-height / 2.0f + i,
+                                           (int)y * yScale - yShift,
+                                           -width / 2.0f + j);
+
+            V.emplace_back(position, Eigen::Vector3f::Zero());
+        }
+    }
+
+    for (int i = 0; i < height - 1; ++i) {
+        for (int j = 0; j < width - 1; ++j) {
+
+            T.emplace_back(i * width + j, i * width + j + 1,
+                           i * width + j + width);
+
+            T.emplace_back(i * width + j + width, i * width + j + 1,
+                           i * width + j + width + 1);
+        }
+    }
     recomputeNormals();
 }
 
