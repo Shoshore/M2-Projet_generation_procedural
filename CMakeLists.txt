@@ -35,8 +35,6 @@ add_executable(sparse
 	src/Mesh.h
 	src/Mesh.cpp
 	src/Scene.h
-	src/Trackball.cpp
-	src/Trackball.h
 	src/Transform.h
 	src/Controls.h
 	src/Controls.cpp

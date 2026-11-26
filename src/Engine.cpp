@@ -37,20 +37,30 @@ void Engine::initLight() {
     glEnable(GL_LIGHTING);
 }
 
+
 void Engine::loadMesh(const char *path) { m_mesh.loadOFF(path); }
+
 
 void Engine::loadHeightMap(const char *path) { m_mesh.loadHeightMap(path); }
 
+
 void Engine::render() {
     glViewport(0, 0, m_viewport.width(), m_viewport.height());
-    glLoadIdentity();
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-    m_controls.camera().apply();
-    
+    const Camera& cam = m_controls.camera();
+
+    glMatrixMode(GL_PROJECTION);
+    glLoadMatrixf(cam.projectionMatrix().data());
+
+    glMatrixMode(GL_MODELVIEW);
+    glLoadMatrixf(cam.viewMatrix().data());
+
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_LIGHTING);
     glDisable(GL_BLEND);
     glColor3f(0.4f, 0.4f, 0.8f);
+
+    glPolygonMode(GL_FRONT_AND_BACK, m_controls.wireframe() ? GL_LINE : GL_FILL);
     m_mesh.draw();
 }

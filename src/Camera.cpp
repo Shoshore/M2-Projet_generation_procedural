@@ -1,142 +1,77 @@
-
-
-
-#include <glad/glad.h>
-
 #include "Camera.h"
-#include <iostream>
 
-using namespace std;
 
-static int _spinning, _moving;
-static int _beginu, _beginv;
-static float _curquat[4];
-static float _x, _y, _z;
-static float __zoom;
-static bool ini = false;
-
-Camera::Camera () {
-  fovAngle = 45.0;
-  aspectRatio = 1.0;
-  nearPlane = 0.1;
-  farPlane = 10000.0;
-  
-  spinning = 0;
-  moving = 0;
-  beginu = 0;
-  beginv = 0;
-  
-  trackball (curquat, 0.0, 0.0, 0.0, 0.0);
-  x = y = z = 0.0;
-  _zoom = 3.0;
-}
-
-void gluPerspective(double fovy,double aspect, double zNear, double zFar)
-{
- // Start in projection mode.
- glMatrixMode(GL_PROJECTION);
- glLoadIdentity();
- double xmin, xmax, ymin, ymax;
- ymax = zNear * tan(fovy * M_PI / 360.0);
- ymin = -ymax;
- xmin = ymin * aspect;
- xmax = ymax * aspect;
- glFrustum(xmin, xmax, ymin, ymax, zNear, zFar);
-
- std::cout << "glFrustum(" << xmin << "," << xmax << "," << ymin << "," << ymax << "," << zNear << "," << zFar << ")" << std::endl;
+Camera::Camera(const Eigen::Vector3f& position, int width, int height)
+    : m_position(position), m_orientation(Eigen::Quaternionf::Identity()) {
+    updateOrientation();
+    resize(width, height);
 }
 
 
-void Camera::resize (int _W, int _H) {
-    std::cout << "Camera::resize" << std::endl;
-  H = _H;
-  W = _W;
-  glViewport (0, 0, (GLint)W, (GLint)H);
-  glMatrixMode (GL_PROJECTION);
-  glLoadIdentity ();
-  aspectRatio = static_cast<float>(W)/static_cast<float>(H);
-  gluPerspective (fovAngle, aspectRatio, nearPlane, farPlane);
-  glMatrixMode (GL_MODELVIEW);
+void Camera::updateOrientation() {
+    Eigen::Quaternionf qYaw(Eigen::AngleAxisf(m_yaw, VEC_UP));
+    Eigen::Quaternionf qPitch(Eigen::AngleAxisf(m_pitch, VEC_RIGHT));
+    m_orientation = (qYaw * qPitch).normalized();
 }
 
 
-void Camera::initPos () {
-  if (!ini) {
-  _spinning = spinning;
-  _moving = moving;;
-  _beginu = beginu;
-  _beginv = beginv;
-  _curquat[0] = curquat[0];
-  _curquat[1] = curquat[1];
-  _curquat[2] = curquat[2];
-  _curquat[3] = curquat[3];
-  _x = x;
-  _y = y;
-  _z = z;;
-  __zoom = _zoom;
-  ini = true;
-  } else {
-    spinning = _spinning;
-    moving = _moving;;
-    beginu = _beginu;
-    beginv = _beginv;
-    curquat[0] = _curquat[0];
-    curquat[1] = _curquat[1];
-    curquat[2] = _curquat[2];
-    curquat[3] = _curquat[3];
-    x = _x;
-    y = _y;
-    z = _z;;
-    _zoom = __zoom;
-  } 
+void Camera::rotate(float dxMouse, float dyMouse) {
+    m_yaw -= dxMouse * MOUSE_SPEED;
+    m_pitch -= dyMouse * MOUSE_SPEED;
+    m_pitch = std::clamp(m_pitch, -MAX_PITCH, MAX_PITCH);
+    updateOrientation();
 }
 
 
-void Camera::move (float dx, float dy, float dz) {
-  x += dx;
-  y += dy;
-  z += dz;
+Eigen::Vector3f Camera::front() const { return m_orientation * VEC_FRONT; }
+Eigen::Vector3f Camera::right() const { return m_orientation * VEC_RIGHT; }
+Eigen::Vector3f Camera::up() const { return m_orientation * VEC_UP; }
+
+
+void Camera::moveForward() { m_position += front() * MOVEMENT_SPEED; }
+void Camera::moveBackward() { m_position -= front() * MOVEMENT_SPEED; }
+void Camera::moveRight() { m_position += right() * MOVEMENT_SPEED; }
+void Camera::moveLeft() { m_position -= right() * MOVEMENT_SPEED; }
+void Camera::moveUp() { m_position += VEC_UP * MOVEMENT_SPEED; }
+void Camera::moveDown() { m_position -= VEC_UP * MOVEMENT_SPEED; }
+
+
+Eigen::Matrix4f Camera::viewMatrix() const {
+    Eigen::Vector3f r = right();
+    Eigen::Vector3f u = up();
+    Eigen::Vector3f f = front();
+
+    Eigen::Matrix3f R; 
+    R.row(0) = r.transpose();
+    R.row(1) = u.transpose();
+    R.row(2) = -f.transpose();
+
+    Eigen::Matrix4f view = Eigen::Matrix4f::Identity();
+    view.block<3,3>(0,0) = R;
+    view.block<3,1>(0,3) = -R * m_position;
+    return view;
 }
 
 
-void Camera::beginRotate (int u, int v) {
-  beginu = u; 
-  beginv = v;
-  moving = 1;
-  spinning = 0;
+void Camera::resize(int width, int height) {
+    m_width  = width;
+    m_height = height;
+    m_aspect = static_cast<float>(width) / static_cast<float>(height);
+    updateProjection();
 }
 
-
-void Camera::rotate (int u, int v) {
-  if (moving) {
-    trackball(lastquat,
-	      (2.0 * beginu - W) / W,
-	      (H - 2.0 * beginv) / H,
-	      (2.0 * u - W) / W,
-	      (H - 2.0 * v) / H);
-    beginu = u;
-    beginv = v;
-    spinning = 1;
-    add_quats (lastquat, curquat, curquat);
-  }
+void Camera::setFov(float fovDegrees) {
+    m_fov = fovDegrees * 3.14159265f / 180.0f;
+    updateProjection();
 }
 
+void Camera::updateProjection() {
+    const float f = 1.0f / std::tan(m_fov * 0.5f);
 
-void Camera::endRotate () {
-  moving = false;
-}
-
-
-void Camera::zoom (float z) {
-  _zoom += z;
-}
-
-
-void Camera::apply () {
-  glLoadIdentity();
-  glTranslatef (x, y, z);
-  GLfloat m[4][4]; 
-  build_rotmatrix(m, curquat);
-  glTranslatef (0.0, 0.0, -_zoom);
-  glMultMatrixf(&m[0][0]);
+    m_projection.setZero();
+    m_projection(0, 0) = f / m_aspect;
+    m_projection(1, 1) = f;
+    m_projection(2, 2) = (m_far + m_near) / (m_near - m_far);
+    m_projection(2, 3) = (2.0f * m_far * m_near) / (m_near - m_far);
+    m_projection(3, 2) = -1.0f;
 }

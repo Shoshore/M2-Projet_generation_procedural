@@ -1,71 +1,61 @@
-// **************************************************
-// GLRK : the OpenGL Refinement Kernel.
-// Camera.
-// This file is a part of the GLRK library.
-// Author : Tamy Boubekeur (Tamy.Boubekeur@labri.fr).
-// Copyright (C) 2006 Tamy Boubekeur.
-// All rights reserved.
-// **************************************************
 #ifndef CAMERA_H
 #define CAMERA_H
 
-
-#include "Trackball.h"
-
-#include <Eigen>
+#include <Eigen/Dense>
+#include <Eigen/Geometry>
+#include <cmath>
 class Camera {
   public:
-    Camera();
-    virtual ~Camera() {}
+    Camera(const Eigen::Vector3f& position = Eigen::Vector3f::Zero(),
+           int width = 800, int height = 600);
 
-    inline float getFovAngle() const { return fovAngle; }
-    inline void setFovAngle(float newFovAngle) { fovAngle = newFovAngle; }
-    inline float getAspectRatio() const { return aspectRatio; }
-    inline float getNearPlane() const { return nearPlane; }
-    inline void setNearPlane(float newNearPlane) { nearPlane = newNearPlane; }
-    inline float getFarPlane() const { return farPlane; }
-    inline void setFarPlane(float newFarPlane) { farPlane = newFarPlane; }
-    inline unsigned int getScreenWidth() const { return W; }
-    inline unsigned int getScreenHeight() const { return H; }
+    void resize(int width, int height);
+    void rotate(float dxMouse, float dyMouse);
 
-    void resize(int W, int H);
+    void moveForward();
+    void moveBackward();
+    void moveLeft();
+    void moveRight();
+    void moveUp();
+    void moveDown();
 
-    void initPos();
+    Eigen::Vector3f front() const;
+    Eigen::Vector3f right() const;
+    Eigen::Vector3f up() const;
 
-    void move(float dx, float dy, float dz);
-    void beginRotate(int u, int v);
-    void rotate(int u, int v);
-    void endRotate();
-    void zoom(float z);
-    void apply();
+    const Eigen::Vector3f& position() const { return m_position; }
+    const Eigen::Quaternionf& orientation() const { return m_orientation; }
 
-    template <typename float_t>
-    void getPos(float_t &X, float_t &Y, float_t &Z) {
-        float m[4][4];
-        build_rotmatrix(m, curquat);
-        float _x = -x;
-        float _y = -y;
-        float _z = -z + _zoom;
-        X = m[0][0] * _x + m[0][1] * _y + m[0][2] * _z;
-        Y = m[1][0] * _x + m[1][1] * _y + m[1][2] * _z;
-        Z = m[2][0] * _x + m[2][1] * _y + m[2][2] * _z;
-    }
-    inline void getPos(Eigen::Vector3f &p) { getPos(p[0], p[1], p[2]); }
+    Eigen::Matrix4f viewMatrix() const;
+    const Eigen::Matrix4f& projectionMatrix() const { return m_projection; }
 
-  public:
-    float fovAngle;
-    float aspectRatio;
-    float nearPlane;
-    float farPlane;
+    void setFov(float fovDegrees);
+    float aspect() const { return m_aspect; }
 
-    int spinning, moving;
-    int beginu, beginv;
-    int H, W;
-    float curquat[4];
-    float lastquat[4];
-    float x, y, z;
-    float _zoom;
+  private:
+    void updateOrientation();
+    void updateProjection();
+
+    Eigen::Vector3f m_position;
+    Eigen::Quaternionf m_orientation;
+    float m_yaw = 0.0f;
+    float m_pitch = 0.0f;
+
+    Eigen::Matrix4f m_projection = Eigen::Matrix4f::Identity();
+    int m_width = 800;
+    int m_height = 600;
+    float m_aspect = 800.0f / 600.0f;
+    float m_fov = 70.0f * M_PI / 180.0f;
+    float m_near = 0.1f;
+    float m_far = 1000.0f;
+
+    const Eigen::Vector3f VEC_FRONT = {1.0f, 0.0f, 0.0f};
+    const Eigen::Vector3f VEC_UP = {0.0f, 1.0f, 0.0f};
+    const Eigen::Vector3f VEC_RIGHT = {0.0f, 0.0f, 1.0f};
+
+    const float MOUSE_SPEED = 0.0005f;
+    const float MOVEMENT_SPEED = 2.0f;
+    const float MAX_PITCH = 89.0f * M_PI / 180.0f;
 };
 
-#endif // CAMERA_H
-
+#endif
