@@ -2,83 +2,84 @@
 #define MESH_H
 
 #include <glad/glad.h>
+#include <glm/glm.hpp>
+#include <memory>
 #include <string>
 #include <vector>
-#include <Eigen>
-// -------------------------------------------
-// Basic Mesh class
-// -------------------------------------------
-
-struct MeshVertex {
-    inline MeshVertex() {}
-    inline MeshVertex(const Eigen::Vector3f &_p, const Eigen::Vector3f &_n)
-        : p(_p), pInit(_p), n(_n) {}
-    inline MeshVertex(const MeshVertex &v) : p(v.p), pInit(v.pInit), n(v.n) {}
-    inline virtual ~MeshVertex() {}
-    inline MeshVertex &operator=(const MeshVertex &v) {
-        p = v.p;
-        pInit = v.pInit;
-        n = v.n;
-        return (*this);
-    }
-    float &operator[](unsigned int c) { return p[c]; }
-    float operator[](unsigned int c) const { return p[c]; }
-
-    // membres :
-    Eigen::Vector3f p;     // une position
-    Eigen::Vector3f pInit; // une position
-    Eigen::Vector3f n;     // une normale
-};
-
-struct MeshTriangle {
-    inline MeshTriangle() { v[0] = v[1] = v[2] = 0; }
-    inline MeshTriangle(const MeshTriangle &t) {
-        v[0] = t.v[0];
-        v[1] = t.v[1];
-        v[2] = t.v[2];
-    }
-    inline MeshTriangle(unsigned int v0, unsigned int v1, unsigned int v2) {
-        v[0] = v0;
-        v[1] = v1;
-        v[2] = v2;
-    }
-    inline virtual ~MeshTriangle() {}
-    inline MeshTriangle &operator=(const MeshTriangle &t) {
-        v[0] = t.v[0];
-        v[1] = t.v[1];
-        v[2] = t.v[2];
-        return (*this);
-    }
-    unsigned int &operator[](unsigned int c) { return v[c]; }
-    unsigned int operator[](unsigned int c) const { return v[c]; }
-
-    // membres :
-    unsigned int v[3];
-};
 
 class Mesh {
   public:
-    std::vector<MeshVertex> V;
-    std::vector<MeshTriangle> T;
+    struct MeshData {
+        GLuint vbo;
+        GLuint nbo;
+        GLuint ubo;
+        GLuint ebo;
+
+        std::vector<glm::vec3> vertices;
+        std::vector<glm::vec3> normals;
+        std::vector<glm::vec2> uvs;
+        std::vector<unsigned int> indices;
+
+        MeshData(const std::vector<glm::vec3> &vertices,
+                 const std::vector<unsigned int> &indices,
+                 const std::vector<glm::vec3> &normals,
+                 const std::vector<glm::vec2> &uvs);
+        ~MeshData();
+
+        MeshData(const MeshData &) = delete;
+        MeshData &operator=(const MeshData &) = delete;
+        MeshData(MeshData &&) = delete;
+        MeshData &operator=(MeshData &&) = delete;
+
+        bool hasNormals() const;
+        bool hasUVs() const;
+        GLsizei indexCount() const;
+    };
+
+    Mesh() = default;
+    explicit Mesh(std::shared_ptr<MeshData> data);
+    Mesh(const std::vector<glm::vec3> &vertices,
+         const std::vector<unsigned int> &indices);
+
+    Mesh(const std::vector<glm::vec3> &vertices,
+         const std::vector<unsigned int> &indices,
+         const std::vector<glm::vec3> &normals);
+
+    Mesh(const std::vector<glm::vec3> &vertices,
+         const std::vector<unsigned int> &indices,
+         const std::vector<glm::vec2> &uvs);
+
+    Mesh(const std::vector<glm::vec3> &vertices,
+         const std::vector<unsigned int> &indices,
+         const std::vector<glm::vec3> &normals,
+         const std::vector<glm::vec2> &uvs);
+
+    Mesh(const Mesh &) = default;
+    Mesh &operator=(const Mesh &) = default;
+    Mesh(Mesh &&) noexcept = default;
+    Mesh &operator=(Mesh &&) noexcept = default;
+
+    bool hasNormals() const;
+    bool hasUVs() const;
+    void draw() const;
+    void cleanUp();
+
+    std::vector<glm::vec3> getVertices() const;
+    std::vector<unsigned int> getIndices() const;
+    std::vector<glm::vec3> getNormals() const;
+    std::vector<glm::vec2> getUvs() const;
+    void updateMeshData(const std::vector<glm::vec3> &vertices,
+                        const std::vector<unsigned int> &indices,
+                        const std::vector<glm::vec3> &normals,
+                        const std::vector<glm::vec2> &uvs);
 
     void loadOFF(const std::string &filename);
     void loadHeightMap(const std::string &filename);
-    void recomputeNormals();
     void centerAndScaleToUnit();
-    void scaleUnit();
+    void recomputeNormals();
 
-    void draw() const {
-        // This code is deprecated. We will how to use vertex arrays and vertex
-        // buffer objects instead.
-        glBegin(GL_TRIANGLES);
-        for (unsigned int i = 0; i < T.size(); i++)
-            for (unsigned int j = 0; j < 3; j++) {
-                const MeshVertex &v = V[T[i].v[j]];
-                glNormal3f(v.n[0], v.n[1], v.n[2]);
-                glVertex3f(v.p[0], v.p[1], v.p[2]);
-            }
-        glEnd();
-    }
+  private:
+    std::shared_ptr<MeshData> data;
 };
 
 #endif

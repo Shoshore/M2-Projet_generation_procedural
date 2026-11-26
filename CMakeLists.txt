@@ -52,7 +52,7 @@ add_executable(sparse
 target_include_directories(sparse PRIVATE
 	${CMAKE_SOURCE_DIR}
 	external/glfw-3.1.2/include
-	# external/glm-0.9.7.1
+	external/glm-0.9.7.1
 )
 target_include_directories(sparse SYSTEM PRIVATE
     external/eigen3
