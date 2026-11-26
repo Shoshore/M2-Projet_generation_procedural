@@ -68,9 +68,4 @@ class Camera {
 };
 
 #endif // CAMERA_H
-// Some Emacs-Hints -- please don't remove:
-//
-//  Local Variables:
-//  mode:C++
-//  tab-width:4
-//  End:
+

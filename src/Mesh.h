@@ -2,7 +2,7 @@
 #define MESH_H
 
 #include <glad/glad.h>
-#include <glm/glm.hpp>
+#include <Eigen>
 #include <memory>
 #include <string>
 #include <vector>
@@ -15,15 +15,15 @@ class Mesh {
         GLuint ubo;
         GLuint ebo;
 
-        std::vector<glm::vec3> vertices;
-        std::vector<glm::vec3> normals;
-        std::vector<glm::vec2> uvs;
+        std::vector<Eigen::Vector3f> vertices;
+        std::vector<Eigen::Vector3f> normals;
+        std::vector<Eigen::Vector2f> uvs;
         std::vector<unsigned int> indices;
 
-        MeshData(const std::vector<glm::vec3> &vertices,
+        MeshData(const std::vector<Eigen::Vector3f> &vertices,
                  const std::vector<unsigned int> &indices,
-                 const std::vector<glm::vec3> &normals,
-                 const std::vector<glm::vec2> &uvs);
+                 const std::vector<Eigen::Vector3f> &normals,
+                 const std::vector<Eigen::Vector2f> &uvs);
         ~MeshData();
 
         MeshData(const MeshData &) = delete;
@@ -38,21 +38,21 @@ class Mesh {
 
     Mesh() = default;
     explicit Mesh(std::shared_ptr<MeshData> data);
-    Mesh(const std::vector<glm::vec3> &vertices,
+    Mesh(const std::vector<Eigen::Vector3f> &vertices,
          const std::vector<unsigned int> &indices);
 
-    Mesh(const std::vector<glm::vec3> &vertices,
+    Mesh(const std::vector<Eigen::Vector3f> &vertices,
          const std::vector<unsigned int> &indices,
-         const std::vector<glm::vec3> &normals);
+         const std::vector<Eigen::Vector3f> &normals);
 
-    Mesh(const std::vector<glm::vec3> &vertices,
+    Mesh(const std::vector<Eigen::Vector3f> &vertices,
          const std::vector<unsigned int> &indices,
-         const std::vector<glm::vec2> &uvs);
+         const std::vector<Eigen::Vector2f> &uvs);
 
-    Mesh(const std::vector<glm::vec3> &vertices,
+    Mesh(const std::vector<Eigen::Vector3f> &vertices,
          const std::vector<unsigned int> &indices,
-         const std::vector<glm::vec3> &normals,
-         const std::vector<glm::vec2> &uvs);
+         const std::vector<Eigen::Vector3f> &normals,
+         const std::vector<Eigen::Vector2f> &uvs);
 
     Mesh(const Mesh &) = default;
     Mesh &operator=(const Mesh &) = default;
@@ -64,14 +64,14 @@ class Mesh {
     void draw() const;
     void cleanUp();
 
-    std::vector<glm::vec3> getVertices() const;
+    std::vector<Eigen::Vector3f> getVertices() const;
     std::vector<unsigned int> getIndices() const;
-    std::vector<glm::vec3> getNormals() const;
-    std::vector<glm::vec2> getUvs() const;
-    void updateMeshData(const std::vector<glm::vec3> &vertices,
+    std::vector<Eigen::Vector3f> getNormals() const;
+    std::vector<Eigen::Vector2f> getUvs() const;
+    void updateMeshData(const std::vector<Eigen::Vector3f> &vertices,
                         const std::vector<unsigned int> &indices,
-                        const std::vector<glm::vec3> &normals,
-                        const std::vector<glm::vec2> &uvs);
+                        const std::vector<Eigen::Vector3f> &normals,
+                        const std::vector<Eigen::Vector2f> &uvs);
 
     void loadOFF(const std::string &filename);
     void loadHeightMap(const std::string &filename);

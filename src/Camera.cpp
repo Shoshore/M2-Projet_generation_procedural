@@ -140,16 +140,3 @@ void Camera::apply () {
   glTranslatef (0.0, 0.0, -_zoom);
   glMultMatrixf(&m[0][0]);
 }
-
-
-//void Camera::getPos (float & X, float & Y, float & Z) {
-//  GLfloat m[4][4];
-//  build_rotmatrix(m, curquat);
-//  float _x = -x;
-//  float _y = -y;
-//  float _z = -z + _zoom;
-//  X = m[0][0] * _x +  m[0][1] * _y +  m[0][2] * _z;
-//  Y = m[1][0] * _x +  m[1][1] * _y +  m[1][2] * _z;
-//  Z = m[2][0] * _x +  m[2][1] * _y +  m[2][2] * _z;
-//}
-
