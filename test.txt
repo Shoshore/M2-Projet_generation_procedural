@@ -1,0 +1,974 @@
+valeur 512 512
+nb de patches : 324
+coordonnées du centre, cx = 0 cy = 0
+zi = 21.6593
+Taille du patch : 3721
+coordonnées du centre, cx = 30 cy = 0
+zi = 22.0737
+Taille du patch : 3721
+coordonnées du centre, cx = 60 cy = 0
+zi = 28.0372
+Taille du patch : 3721
+coordonnées du centre, cx = 90 cy = 0
+zi = 46.1964
+Taille du patch : 3721
+coordonnées du centre, cx = 120 cy = 0
+zi = 80.8586
+Taille du patch : 3721
+coordonnées du centre, cx = 150 cy = 0
+zi = 112.436
+Taille du patch : 3721
+coordonnées du centre, cx = 180 cy = 0
+zi = 110.416
+Taille du patch : 3721
+coordonnées du centre, cx = 210 cy = 0
+zi = 106.234
+Taille du patch : 3721
+coordonnées du centre, cx = 240 cy = 0
+zi = 111.739
+Taille du patch : 3721
+coordonnées du centre, cx = 270 cy = 0
+zi = 117.807
+Taille du patch : 3721
+coordonnées du centre, cx = 300 cy = 0
+zi = 114.74
+Taille du patch : 3721
+coordonnées du centre, cx = 330 cy = 0
+zi = 92.7933
+Taille du patch : 3721
+coordonnées du centre, cx = 360 cy = 0
+zi = 73.0057
+Taille du patch : 3721
+coordonnées du centre, cx = 390 cy = 0
+zi = 68.0518
+Taille du patch : 3721
+coordonnées du centre, cx = 420 cy = 0
+zi = 69.5225
+Taille du patch : 3721
+coordonnées du centre, cx = 450 cy = 0
+zi = 76.2028
+Taille du patch : 3721
+coordonnées du centre, cx = 480 cy = 0
+zi = 87.1127
+Taille du patch : 3721
+coordonnées du centre, cx = 510 cy = 0
+zi = 94.5144
+Taille du patch : 3721
+coordonnées du centre, cx = 0 cy = 30
+zi = 24.4764
+Taille du patch : 3721
+coordonnées du centre, cx = 30 cy = 30
+zi = 25.0202
+Taille du patch : 3721
+coordonnées du centre, cx = 60 cy = 30
+zi = 29.2776
+Taille du patch : 3721
+coordonnées du centre, cx = 90 cy = 30
+zi = 45.3017
+Taille du patch : 3721
+coordonnées du centre, cx = 120 cy = 30
+zi = 82.4803
+Taille du patch : 3721
+coordonnées du centre, cx = 150 cy = 30
+zi = 124.337
+Taille du patch : 3721
+coordonnées du centre, cx = 180 cy = 30
+zi = 133.394
+Taille du patch : 3721
+coordonnées du centre, cx = 210 cy = 30
+zi = 127.161
+Taille du patch : 3721
+coordonnées du centre, cx = 240 cy = 30
+zi = 122.499
+Taille du patch : 3721
+coordonnées du centre, cx = 270 cy = 30
+zi = 116.192
+Taille du patch : 3721
+coordonnées du centre, cx = 300 cy = 30
+zi = 101.453
+Taille du patch : 3721
+coordonnées du centre, cx = 330 cy = 30
+zi = 83.1808
+Taille du patch : 3721
+coordonnées du centre, cx = 360 cy = 30
+zi = 74.1521
+Taille du patch : 3721
+coordonnées du centre, cx = 390 cy = 30
+zi = 70.8926
+Taille du patch : 3721
+coordonnées du centre, cx = 420 cy = 30
+zi = 70.8639
+Taille du patch : 3721
+coordonnées du centre, cx = 450 cy = 30
+zi = 77.7434
+Taille du patch : 3721
+coordonnées du centre, cx = 480 cy = 30
+zi = 90.1407
+Taille du patch : 3721
+coordonnées du centre, cx = 510 cy = 30
+zi = 96.0656
+Taille du patch : 3721
+coordonnées du centre, cx = 0 cy = 60
+zi = 28.8511
+Taille du patch : 3721
+coordonnées du centre, cx = 30 cy = 60
+zi = 28.7745
+Taille du patch : 3721
+coordonnées du centre, cx = 60 cy = 60
+zi = 31.8564
+Taille du patch : 3721
+coordonnées du centre, cx = 90 cy = 60
+zi = 45.9713
+Taille du patch : 3721
+coordonnées du centre, cx = 120 cy = 60
+zi = 81.0532
+Taille du patch : 3721
+coordonnées du centre, cx = 150 cy = 60
+zi = 121.261
+Taille du patch : 3721
+coordonnées du centre, cx = 180 cy = 60
+zi = 137.446
+Taille du patch : 3721
+coordonnées du centre, cx = 210 cy = 60
+zi = 135.454
+Taille du patch : 3721
+coordonnées du centre, cx = 240 cy = 60
+zi = 117.307
+Taille du patch : 3721
+coordonnées du centre, cx = 270 cy = 60
+zi = 99.6749
+Taille du patch : 3721
+coordonnées du centre, cx = 300 cy = 60
+zi = 88.5207
+Taille du patch : 3721
+coordonnées du centre, cx = 330 cy = 60
+zi = 80.9153
+Taille du patch : 3721
+coordonnées du centre, cx = 360 cy = 60
+zi = 76.8954
+Taille du patch : 3721
+coordonnées du centre, cx = 390 cy = 60
+zi = 74.7618
+Taille du patch : 3721
+coordonnées du centre, cx = 420 cy = 60
+zi = 74.9617
+Taille du patch : 3721
+coordonnées du centre, cx = 450 cy = 60
+zi = 77.5689
+Taille du patch : 3721
+coordonnées du centre, cx = 480 cy = 60
+zi = 86.6501
+Taille du patch : 3721
+coordonnées du centre, cx = 510 cy = 60
+zi = 94.5119
+Taille du patch : 3721
+coordonnées du centre, cx = 0 cy = 90
+zi = 33.3804
+Taille du patch : 3721
+coordonnées du centre, cx = 30 cy = 90
+zi = 31.9022
+Taille du patch : 3721
+coordonnées du centre, cx = 60 cy = 90
+zi = 33.4342
+Taille du patch : 3721
+coordonnées du centre, cx = 90 cy = 90
+zi = 39.8674
+Taille du patch : 3721
+coordonnées du centre, cx = 120 cy = 90
+zi = 60.5711
+Taille du patch : 3721
+coordonnées du centre, cx = 150 cy = 90
+zi = 87.1507
+Taille du patch : 3721
+coordonnées du centre, cx = 180 cy = 90
+zi = 102.215
+Taille du patch : 3721
+coordonnées du centre, cx = 210 cy = 90
+zi = 113.051
+Taille du patch : 3721
+coordonnées du centre, cx = 240 cy = 90
+zi = 110.173
+Taille du patch : 3721
+coordonnées du centre, cx = 270 cy = 90
+zi = 96.7763
+Taille du patch : 3721
+coordonnées du centre, cx = 300 cy = 90
+zi = 89.7806
+Taille du patch : 3721
+coordonnées du centre, cx = 330 cy = 90
+zi = 86.2574
+Taille du patch : 3721
+coordonnées du centre, cx = 360 cy = 90
+zi = 85.5721
+Taille du patch : 3721
+coordonnées du centre, cx = 390 cy = 90
+zi = 90.0262
+Taille du patch : 3721
+coordonnées du centre, cx = 420 cy = 90
+zi = 92.3176
+Taille du patch : 3721
+coordonnées du centre, cx = 450 cy = 90
+zi = 84.9121
+Taille du patch : 3721
+coordonnées du centre, cx = 480 cy = 90
+zi = 81.1804
+Taille du patch : 3721
+coordonnées du centre, cx = 510 cy = 90
+zi = 82.6569
+Taille du patch : 3721
+coordonnées du centre, cx = 0 cy = 120
+zi = 36.0876
+Taille du patch : 3721
+coordonnées du centre, cx = 30 cy = 120
+zi = 36.3095
+Taille du patch : 3721
+coordonnées du centre, cx = 60 cy = 120
+zi = 38.1822
+Taille du patch : 3721
+coordonnées du centre, cx = 90 cy = 120
+zi = 41.6381
+Taille du patch : 3721
+coordonnées du centre, cx = 120 cy = 120
+zi = 49.6927
+Taille du patch : 3721
+coordonnées du centre, cx = 150 cy = 120
+zi = 62.079
+Taille du patch : 3721
+coordonnées du centre, cx = 180 cy = 120
+zi = 74.6253
+Taille du patch : 3721
+coordonnées du centre, cx = 210 cy = 120
+zi = 92.2368
+Taille du patch : 3721
+coordonnées du centre, cx = 240 cy = 120
+zi = 110.582
+Taille du patch : 3721
+coordonnées du centre, cx = 270 cy = 120
+zi = 113.256
+Taille du patch : 3721
+coordonnées du centre, cx = 300 cy = 120
+zi = 105.445
+Taille du patch : 3721
+coordonnées du centre, cx = 330 cy = 120
+zi = 103.321
+Taille du patch : 3721
+coordonnées du centre, cx = 360 cy = 120
+zi = 108.894
+Taille du patch : 3721
+coordonnées du centre, cx = 390 cy = 120
+zi = 116.983
+Taille du patch : 3721
+coordonnées du centre, cx = 420 cy = 120
+zi = 106.566
+Taille du patch : 3721
+coordonnées du centre, cx = 450 cy = 120
+zi = 82.0362
+Taille du patch : 3721
+coordonnées du centre, cx = 480 cy = 120
+zi = 63.4296
+Taille du patch : 3721
+coordonnées du centre, cx = 510 cy = 120
+zi = 53.0709
+Taille du patch : 3721
+coordonnées du centre, cx = 0 cy = 150
+zi = 44.1414
+Taille du patch : 3721
+coordonnées du centre, cx = 30 cy = 150
+zi = 52.6065
+Taille du patch : 3721
+coordonnées du centre, cx = 60 cy = 150
+zi = 52.587
+Taille du patch : 3721
+coordonnées du centre, cx = 90 cy = 150
+zi = 48.5161
+Taille du patch : 3721
+coordonnées du centre, cx = 120 cy = 150
+zi = 51.822
+Taille du patch : 3721
+coordonnées du centre, cx = 150 cy = 150
+zi = 57.5027
+Taille du patch : 3721
+coordonnées du centre, cx = 180 cy = 150
+zi = 68.302
+Taille du patch : 3721
+coordonnées du centre, cx = 210 cy = 150
+zi = 91.7845
+Taille du patch : 3721
+coordonnées du centre, cx = 240 cy = 150
+zi = 119.94
+Taille du patch : 3721
+coordonnées du centre, cx = 270 cy = 150
+zi = 138.468
+Taille du patch : 3721
+coordonnées du centre, cx = 300 cy = 150
+zi = 138.194
+Taille du patch : 3721
+coordonnées du centre, cx = 330 cy = 150
+zi = 136.535
+Taille du patch : 3721
+coordonnées du centre, cx = 360 cy = 150
+zi = 142.43
+Taille du patch : 3721
+coordonnées du centre, cx = 390 cy = 150
+zi = 139.445
+Taille du patch : 3721
+coordonnées du centre, cx = 420 cy = 150
+zi = 107.101
+Taille du patch : 3721
+coordonnées du centre, cx = 450 cy = 150
+zi = 67.2839
+Taille du patch : 3721
+coordonnées du centre, cx = 480 cy = 150
+zi = 43.1553
+Taille du patch : 3721
+coordonnées du centre, cx = 510 cy = 150
+zi = 31.9738
+Taille du patch : 3721
+coordonnées du centre, cx = 0 cy = 180
+zi = 66.1358
+Taille du patch : 3721
+coordonnées du centre, cx = 30 cy = 180
+zi = 82.5409
+Taille du patch : 3721
+coordonnées du centre, cx = 60 cy = 180
+zi = 80.1946
+Taille du patch : 3721
+coordonnées du centre, cx = 90 cy = 180
+zi = 70.5987
+Taille du patch : 3721
+coordonnées du centre, cx = 120 cy = 180
+zi = 73.0191
+Taille du patch : 3721
+coordonnées du centre, cx = 150 cy = 180
+zi = 79.3658
+Taille du patch : 3721
+coordonnées du centre, cx = 180 cy = 180
+zi = 89.4002
+Taille du patch : 3721
+coordonnées du centre, cx = 210 cy = 180
+zi = 110.615
+Taille du patch : 3721
+coordonnées du centre, cx = 240 cy = 180
+zi = 135.892
+Taille du patch : 3721
+coordonnées du centre, cx = 270 cy = 180
+zi = 160.222
+Taille du patch : 3721
+coordonnées du centre, cx = 300 cy = 180
+zi = 171.446
+Taille du patch : 3721
+coordonnées du centre, cx = 330 cy = 180
+zi = 171.645
+Taille du patch : 3721
+coordonnées du centre, cx = 360 cy = 180
+zi = 170.449
+Taille du patch : 3721
+coordonnées du centre, cx = 390 cy = 180
+zi = 154.74
+Taille du patch : 3721
+coordonnées du centre, cx = 420 cy = 180
+zi = 115.773
+Taille du patch : 3721
+coordonnées du centre, cx = 450 cy = 180
+zi = 72.2903
+Taille du patch : 3721
+coordonnées du centre, cx = 480 cy = 180
+zi = 43.0971
+Taille du patch : 3721
+coordonnées du centre, cx = 510 cy = 180
+zi = 36.8965
+Taille du patch : 3721
+coordonnées du centre, cx = 0 cy = 210
+zi = 89.034
+Taille du patch : 3721
+coordonnées du centre, cx = 30 cy = 210
+zi = 108.285
+Taille du patch : 3721
+coordonnées du centre, cx = 60 cy = 210
+zi = 110.518
+Taille du patch : 3721
+coordonnées du centre, cx = 90 cy = 210
+zi = 103.55
+Taille du patch : 3721
+coordonnées du centre, cx = 120 cy = 210
+zi = 108.089
+Taille du patch : 3721
+coordonnées du centre, cx = 150 cy = 210
+zi = 116.685
+Taille du patch : 3721
+coordonnées du centre, cx = 180 cy = 210
+zi = 126.378
+Taille du patch : 3721
+coordonnées du centre, cx = 210 cy = 210
+zi = 142.089
+Taille du patch : 3721
+coordonnées du centre, cx = 240 cy = 210
+zi = 159.68
+Taille du patch : 3721
+coordonnées du centre, cx = 270 cy = 210
+zi = 181.798
+Taille du patch : 3721
+coordonnées du centre, cx = 300 cy = 210
+zi = 200.429
+Taille du patch : 3721
+coordonnées du centre, cx = 330 cy = 210
+zi = 194.767
+Taille du patch : 3721
+coordonnées du centre, cx = 360 cy = 210
+zi = 173.697
+Taille du patch : 3721
+coordonnées du centre, cx = 390 cy = 210
+zi = 147.324
+Taille du patch : 3721
+coordonnées du centre, cx = 420 cy = 210
+zi = 117.824
+Taille du patch : 3721
+coordonnées du centre, cx = 450 cy = 210
+zi = 83.8532
+Taille du patch : 3721
+coordonnées du centre, cx = 480 cy = 210
+zi = 58.7395
+Taille du patch : 3721
+coordonnées du centre, cx = 510 cy = 210
+zi = 52.0269
+Taille du patch : 3721
+coordonnées du centre, cx = 0 cy = 240
+zi = 91.5409
+Taille du patch : 3721
+coordonnées du centre, cx = 30 cy = 240
+zi = 118.991
+Taille du patch : 3721
+coordonnées du centre, cx = 60 cy = 240
+zi = 129.498
+Taille du patch : 3721
+coordonnées du centre, cx = 90 cy = 240
+zi = 131.536
+Taille du patch : 3721
+coordonnées du centre, cx = 120 cy = 240
+zi = 137.547
+Taille du patch : 3721
+coordonnées du centre, cx = 150 cy = 240
+zi = 146.022
+Taille du patch : 3721
+coordonnées du centre, cx = 180 cy = 240
+zi = 157.245
+Taille du patch : 3721
+coordonnées du centre, cx = 210 cy = 240
+zi = 171.457
+Taille du patch : 3721
+coordonnées du centre, cx = 240 cy = 240
+zi = 188.14
+Taille du patch : 3721
+coordonnées du centre, cx = 270 cy = 240
+zi = 206.618
+Taille du patch : 3721
+coordonnées du centre, cx = 300 cy = 240
+zi = 211.806
+Taille du patch : 3721
+coordonnées du centre, cx = 330 cy = 240
+zi = 188.011
+Taille du patch : 3721
+coordonnées du centre, cx = 360 cy = 240
+zi = 154.689
+Taille du patch : 3721
+coordonnées du centre, cx = 390 cy = 240
+zi = 125.814
+Taille du patch : 3721
+coordonnées du centre, cx = 420 cy = 240
+zi = 96.3878
+Taille du patch : 3721
+coordonnées du centre, cx = 450 cy = 240
+zi = 62.5959
+Taille du patch : 3721
+coordonnées du centre, cx = 480 cy = 240
+zi = 40.1361
+Taille du patch : 3721
+coordonnées du centre, cx = 510 cy = 240
+zi = 32.346
+Taille du patch : 3721
+coordonnées du centre, cx = 0 cy = 270
+zi = 77.5569
+Taille du patch : 3721
+coordonnées du centre, cx = 30 cy = 270
+zi = 106.391
+Taille du patch : 3721
+coordonnées du centre, cx = 60 cy = 270
+zi = 119.873
+Taille du patch : 3721
+coordonnées du centre, cx = 90 cy = 270
+zi = 126.917
+Taille du patch : 3721
+coordonnées du centre, cx = 120 cy = 270
+zi = 135.496
+Taille du patch : 3721
+coordonnées du centre, cx = 150 cy = 270
+zi = 149.541
+Taille du patch : 3721
+coordonnées du centre, cx = 180 cy = 270
+zi = 172.615
+Taille du patch : 3721
+coordonnées du centre, cx = 210 cy = 270
+zi = 197.43
+Taille du patch : 3721
+coordonnées du centre, cx = 240 cy = 270
+zi = 219.387
+Taille du patch : 3721
+coordonnées du centre, cx = 270 cy = 270
+zi = 227.19
+Taille du patch : 3721
+coordonnées du centre, cx = 300 cy = 270
+zi = 205.72
+Taille du patch : 3721
+coordonnées du centre, cx = 330 cy = 270
+zi = 170.576
+Taille du patch : 3721
+coordonnées du centre, cx = 360 cy = 270
+zi = 142.269
+Taille du patch : 3721
+coordonnées du centre, cx = 390 cy = 270
+zi = 114.88
+Taille du patch : 3721
+coordonnées du centre, cx = 420 cy = 270
+zi = 84.7008
+Taille du patch : 3721
+coordonnées du centre, cx = 450 cy = 270
+zi = 48.2588
+Taille du patch : 3721
+coordonnées du centre, cx = 480 cy = 270
+zi = 21.4637
+Taille du patch : 3721
+coordonnées du centre, cx = 510 cy = 270
+zi = 12.3403
+Taille du patch : 3721
+coordonnées du centre, cx = 0 cy = 300
+zi = 60.3644
+Taille du patch : 3721
+coordonnées du centre, cx = 30 cy = 300
+zi = 80.0096
+Taille du patch : 3721
+coordonnées du centre, cx = 60 cy = 300
+zi = 92.9149
+Taille du patch : 3721
+coordonnées du centre, cx = 90 cy = 300
+zi = 99.1251
+Taille du patch : 3721
+coordonnées du centre, cx = 120 cy = 300
+zi = 106.924
+Taille du patch : 3721
+coordonnées du centre, cx = 150 cy = 300
+zi = 125.351
+Taille du patch : 3721
+coordonnées du centre, cx = 180 cy = 300
+zi = 156.616
+Taille du patch : 3721
+coordonnées du centre, cx = 210 cy = 300
+zi = 191.923
+Taille du patch : 3721
+coordonnées du centre, cx = 240 cy = 300
+zi = 225.517
+Taille du patch : 3721
+coordonnées du centre, cx = 270 cy = 300
+zi = 231.267
+Taille du patch : 3721
+coordonnées du centre, cx = 300 cy = 300
+zi = 198.718
+Taille du patch : 3721
+coordonnées du centre, cx = 330 cy = 300
+zi = 166.451
+Taille du patch : 3721
+coordonnées du centre, cx = 360 cy = 300
+zi = 139.663
+Taille du patch : 3721
+coordonnées du centre, cx = 390 cy = 300
+zi = 115.201
+Taille du patch : 3721
+coordonnées du centre, cx = 420 cy = 300
+zi = 91.2691
+Taille du patch : 3721
+coordonnées du centre, cx = 450 cy = 300
+zi = 58.0674
+Taille du patch : 3721
+coordonnées du centre, cx = 480 cy = 300
+zi = 22.0379
+Taille du patch : 3721
+coordonnées du centre, cx = 510 cy = 300
+zi = 4.42467
+Taille du patch : 3721
+coordonnées du centre, cx = 0 cy = 330
+zi = 56.8802
+Taille du patch : 3721
+coordonnées du centre, cx = 30 cy = 330
+zi = 63.8522
+Taille du patch : 3721
+coordonnées du centre, cx = 60 cy = 330
+zi = 70.8153
+Taille du patch : 3721
+coordonnées du centre, cx = 90 cy = 330
+zi = 77.4584
+Taille du patch : 3721
+coordonnées du centre, cx = 120 cy = 330
+zi = 85.9419
+Taille du patch : 3721
+coordonnées du centre, cx = 150 cy = 330
+zi = 101.531
+Taille du patch : 3721
+coordonnées du centre, cx = 180 cy = 330
+zi = 130.574
+Taille du patch : 3721
+coordonnées du centre, cx = 210 cy = 330
+zi = 163.476
+Taille du patch : 3721
+coordonnées du centre, cx = 240 cy = 330
+zi = 201.815
+Taille du patch : 3721
+coordonnées du centre, cx = 270 cy = 330
+zi = 218.683
+Taille du patch : 3721
+coordonnées du centre, cx = 300 cy = 330
+zi = 198.998
+Taille du patch : 3721
+coordonnées du centre, cx = 330 cy = 330
+zi = 168.284
+Taille du patch : 3721
+coordonnées du centre, cx = 360 cy = 330
+zi = 138.64
+Taille du patch : 3721
+coordonnées du centre, cx = 390 cy = 330
+zi = 111.826
+Taille du patch : 3721
+coordonnées du centre, cx = 420 cy = 330
+zi = 88.57
+Taille du patch : 3721
+coordonnées du centre, cx = 450 cy = 330
+zi = 55.0333
+Taille du patch : 3721
+coordonnées du centre, cx = 480 cy = 330
+zi = 19.4389
+Taille du patch : 3721
+coordonnées du centre, cx = 510 cy = 330
+zi = 2.31195
+Taille du patch : 3721
+coordonnées du centre, cx = 0 cy = 360
+zi = 72.1407
+Taille du patch : 3721
+coordonnées du centre, cx = 30 cy = 360
+zi = 79.2414
+Taille du patch : 3721
+coordonnées du centre, cx = 60 cy = 360
+zi = 79.7696
+Taille du patch : 3721
+coordonnées du centre, cx = 90 cy = 360
+zi = 77.3758
+Taille du patch : 3721
+coordonnées du centre, cx = 120 cy = 360
+zi = 79.6402
+Taille du patch : 3721
+coordonnées du centre, cx = 150 cy = 360
+zi = 88.7901
+Taille du patch : 3721
+coordonnées du centre, cx = 180 cy = 360
+zi = 110.929
+Taille du patch : 3721
+coordonnées du centre, cx = 210 cy = 360
+zi = 141.04
+Taille du patch : 3721
+coordonnées du centre, cx = 240 cy = 360
+zi = 174.907
+Taille du patch : 3721
+coordonnées du centre, cx = 270 cy = 360
+zi = 196.238
+Taille du patch : 3721
+coordonnées du centre, cx = 300 cy = 360
+zi = 189.462
+Taille du patch : 3721
+coordonnées du centre, cx = 330 cy = 360
+zi = 161.552
+Taille du patch : 3721
+coordonnées du centre, cx = 360 cy = 360
+zi = 128.48
+Taille du patch : 3721
+coordonnées du centre, cx = 390 cy = 360
+zi = 95.8472
+Taille du patch : 3721
+coordonnées du centre, cx = 420 cy = 360
+zi = 65.1241
+Taille du patch : 3721
+coordonnées du centre, cx = 450 cy = 360
+zi = 30.8862
+Taille du patch : 3721
+coordonnées du centre, cx = 480 cy = 360
+zi = 10.4977
+Taille du patch : 3721
+coordonnées du centre, cx = 510 cy = 360
+zi = 2.22333
+Taille du patch : 3721
+coordonnées du centre, cx = 0 cy = 390
+zi = 113.966
+Taille du patch : 3721
+coordonnées du centre, cx = 30 cy = 390
+zi = 123.197
+Taille du patch : 3721
+coordonnées du centre, cx = 60 cy = 390
+zi = 112.18
+Taille du patch : 3721
+coordonnées du centre, cx = 90 cy = 390
+zi = 94.3903
+Taille du patch : 3721
+coordonnées du centre, cx = 120 cy = 390
+zi = 87.3701
+Taille du patch : 3721
+coordonnées du centre, cx = 150 cy = 390
+zi = 88.737
+Taille du patch : 3721
+coordonnées du centre, cx = 180 cy = 390
+zi = 99.6207
+Taille du patch : 3721
+coordonnées du centre, cx = 210 cy = 390
+zi = 123.366
+Taille du patch : 3721
+coordonnées du centre, cx = 240 cy = 390
+zi = 155.324
+Taille du patch : 3721
+coordonnées du centre, cx = 270 cy = 390
+zi = 180.073
+Taille du patch : 3721
+coordonnées du centre, cx = 300 cy = 390
+zi = 182.737
+Taille du patch : 3721
+coordonnées du centre, cx = 330 cy = 390
+zi = 155.989
+Taille du patch : 3721
+coordonnées du centre, cx = 360 cy = 390
+zi = 124.218
+Taille du patch : 3721
+coordonnées du centre, cx = 390 cy = 390
+zi = 92.6427
+Taille du patch : 3721
+coordonnées du centre, cx = 420 cy = 390
+zi = 58.1223
+Taille du patch : 3721
+coordonnées du centre, cx = 450 cy = 390
+zi = 21.5285
+Taille du patch : 3721
+coordonnées du centre, cx = 480 cy = 390
+zi = 6.99291
+Taille du patch : 3721
+coordonnées du centre, cx = 510 cy = 390
+zi = 2.95853
+Taille du patch : 3721
+coordonnées du centre, cx = 0 cy = 420
+zi = 153.443
+Taille du patch : 3721
+coordonnées du centre, cx = 30 cy = 420
+zi = 159.492
+Taille du patch : 3721
+coordonnées du centre, cx = 60 cy = 420
+zi = 141.382
+Taille du patch : 3721
+coordonnées du centre, cx = 90 cy = 420
+zi = 116.744
+Taille du patch : 3721
+coordonnées du centre, cx = 120 cy = 420
+zi = 103.543
+Taille du patch : 3721
+coordonnées du centre, cx = 150 cy = 420
+zi = 98.1673
+Taille du patch : 3721
+coordonnées du centre, cx = 180 cy = 420
+zi = 102.748
+Taille du patch : 3721
+coordonnées du centre, cx = 210 cy = 420
+zi = 123.027
+Taille du patch : 3721
+coordonnées du centre, cx = 240 cy = 420
+zi = 151.471
+Taille du patch : 3721
+coordonnées du centre, cx = 270 cy = 420
+zi = 178.024
+Taille du patch : 3721
+coordonnées du centre, cx = 300 cy = 420
+zi = 187.758
+Taille du patch : 3721
+coordonnées du centre, cx = 330 cy = 420
+zi = 162.457
+Taille du patch : 3721
+coordonnées du centre, cx = 360 cy = 420
+zi = 133.41
+Taille du patch : 3721
+coordonnées du centre, cx = 390 cy = 420
+zi = 108.952
+Taille du patch : 3721
+coordonnées du centre, cx = 420 cy = 420
+zi = 73.3286
+Taille du patch : 3721
+coordonnées du centre, cx = 450 cy = 420
+zi = 37.424
+Taille du patch : 3721
+coordonnées du centre, cx = 480 cy = 420
+zi = 19.4739
+Taille du patch : 3721
+coordonnées du centre, cx = 510 cy = 420
+zi = 7.85289
+Taille du patch : 3721
+coordonnées du centre, cx = 0 cy = 450
+zi = 133.603
+Taille du patch : 3721
+coordonnées du centre, cx = 30 cy = 450
+zi = 151.75
+Taille du patch : 3721
+coordonnées du centre, cx = 60 cy = 450
+zi = 156.761
+Taille du patch : 3721
+coordonnées du centre, cx = 90 cy = 450
+zi = 146.366
+Taille du patch : 3721
+coordonnées du centre, cx = 120 cy = 450
+zi = 130.968
+Taille du patch : 3721
+coordonnées du centre, cx = 150 cy = 450
+zi = 120.885
+Taille du patch : 3721
+coordonnées du centre, cx = 180 cy = 450
+zi = 122.59
+Taille du patch : 3721
+coordonnées du centre, cx = 210 cy = 450
+zi = 138.268
+Taille du patch : 3721
+coordonnées du centre, cx = 240 cy = 450
+zi = 161.612
+Taille du patch : 3721
+coordonnées du centre, cx = 270 cy = 450
+zi = 187.876
+Taille du patch : 3721
+coordonnées du centre, cx = 300 cy = 450
+zi = 200.582
+Taille du patch : 3721
+coordonnées du centre, cx = 330 cy = 450
+zi = 179.575
+Taille du patch : 3721
+coordonnées du centre, cx = 360 cy = 450
+zi = 160.01
+Taille du patch : 3721
+coordonnées du centre, cx = 390 cy = 450
+zi = 136.599
+Taille du patch : 3721
+coordonnées du centre, cx = 420 cy = 450
+zi = 109.151
+Taille du patch : 3721
+coordonnées du centre, cx = 450 cy = 450
+zi = 88.0025
+Taille du patch : 3721
+coordonnées du centre, cx = 480 cy = 450
+zi = 70.7497
+Taille du patch : 3721
+coordonnées du centre, cx = 510 cy = 450
+zi = 49.8415
+Taille du patch : 3721
+coordonnées du centre, cx = 0 cy = 480
+zi = 91.8646
+Taille du patch : 3721
+coordonnées du centre, cx = 30 cy = 480
+zi = 116.077
+Taille du patch : 3721
+coordonnées du centre, cx = 60 cy = 480
+zi = 133.249
+Taille du patch : 3721
+coordonnées du centre, cx = 90 cy = 480
+zi = 143.967
+Taille du patch : 3721
+coordonnées du centre, cx = 120 cy = 480
+zi = 144.785
+Taille du patch : 3721
+coordonnées du centre, cx = 150 cy = 480
+zi = 132.507
+Taille du patch : 3721
+coordonnées du centre, cx = 180 cy = 480
+zi = 136.491
+Taille du patch : 3721
+coordonnées du centre, cx = 210 cy = 480
+zi = 152.362
+Taille du patch : 3721
+coordonnées du centre, cx = 240 cy = 480
+zi = 169.372
+Taille du patch : 3721
+coordonnées du centre, cx = 270 cy = 480
+zi = 184.502
+Taille du patch : 3721
+coordonnées du centre, cx = 300 cy = 480
+zi = 193.61
+Taille du patch : 3721
+coordonnées du centre, cx = 330 cy = 480
+zi = 186.75
+Taille du patch : 3721
+coordonnées du centre, cx = 360 cy = 480
+zi = 187.496
+Taille du patch : 3721
+coordonnées du centre, cx = 390 cy = 480
+zi = 170.61
+Taille du patch : 3721
+coordonnées du centre, cx = 420 cy = 480
+zi = 142.848
+Taille du patch : 3721
+coordonnées du centre, cx = 450 cy = 480
+zi = 120.503
+Taille du patch : 3721
+coordonnées du centre, cx = 480 cy = 480
+zi = 111.117
+Taille du patch : 3721
+coordonnées du centre, cx = 510 cy = 480
+zi = 102.819
+Taille du patch : 3721
+coordonnées du centre, cx = 0 cy = 510
+zi = 68.0911
+Taille du patch : 3721
+coordonnées du centre, cx = 30 cy = 510
+zi = 93.6033
+Taille du patch : 3721
+coordonnées du centre, cx = 60 cy = 510
+zi = 98.5459
+Taille du patch : 3721
+coordonnées du centre, cx = 90 cy = 510
+zi = 111.943
+Taille du patch : 3721
+coordonnées du centre, cx = 120 cy = 510
+zi = 126.508
+Taille du patch : 3721
+coordonnées du centre, cx = 150 cy = 510
+zi = 111.775
+Taille du patch : 3721
+coordonnées du centre, cx = 180 cy = 510
+zi = 114.463
+Taille du patch : 3721
+coordonnées du centre, cx = 210 cy = 510
+zi = 133.945
+Taille du patch : 3721
+coordonnées du centre, cx = 240 cy = 510
+zi = 145.907
+Taille du patch : 3721
+coordonnées du centre, cx = 270 cy = 510
+zi = 142.934
+Taille du patch : 3721
+coordonnées du centre, cx = 300 cy = 510
+zi = 148.632
+Taille du patch : 3721
+coordonnées du centre, cx = 330 cy = 510
+zi = 159.634
+Taille du patch : 3721
+coordonnées du centre, cx = 360 cy = 510
+zi = 177.586
+Taille du patch : 3721
+coordonnées du centre, cx = 390 cy = 510
+zi = 183.942
+Taille du patch : 3721
+coordonnées du centre, cx = 420 cy = 510
+zi = 169.138
+Taille du patch : 3721
+coordonnées du centre, cx = 450 cy = 510
+zi = 147.981
+Taille du patch : 3721
+coordonnées du centre, cx = 480 cy = 510
+zi = 144.42
+Taille du patch : 3721
+coordonnées du centre, cx = 510 cy = 510
+zi = 138.903
+Taille du patch : 3721

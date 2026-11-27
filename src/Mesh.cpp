@@ -183,7 +183,7 @@ void Mesh::loadHeightMap(const std::string &filename) {
     vertices.reserve(static_cast<std::size_t>(width) * height);
     indices.reserve(static_cast<std::size_t>(width - 1) * (height - 1) * 6);
 
-    const float yScale = 64.0f / 256.0f;
+    const float yScale = 256.0f / 256.0f;
     const float yShift = 16.0f;
 
     for (int i = 0; i < height; ++i) {
@@ -246,8 +246,8 @@ void Mesh::recomputeNormals() {
         return;
     }
 
-    std::vector<Eigen::Vector3f> normals(
-        data->vertices.size(), Eigen::Vector3f::Zero());
+    std::vector<Eigen::Vector3f> normals(data->vertices.size(),
+                                         Eigen::Vector3f::Zero());
 
     for (std::size_t i = 0; i < data->indices.size(); i += 3) {
         const unsigned int i0 = data->indices[i];
